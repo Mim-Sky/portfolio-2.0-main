@@ -1,14 +1,14 @@
-// {
-//   "compilerOptions": {
-//     "paths": {
-//       "@/*": ["./src/*"]
-//     }
-//   }
-// }
-
 {
   "compilerOptions": {
-    "baseUrl": "src"
-  },
-  "include": ["src"]
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
 }
+
+// {
+//   "compilerOptions": {
+//     "baseUrl": "src"
+//   },
+//   "include": ["src"]
+// }

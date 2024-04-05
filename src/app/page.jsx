@@ -3,6 +3,7 @@ import Image from "next/image";
 import usePrefersReducedMotion from "@/hooks/reducedMotion";
 import { motion } from "framer-motion";
 import Projects from "../components/Section/projects";
+import Hero from "../components/Section/hero";
 
 
 function Home() {
@@ -35,11 +36,10 @@ function Home() {
     </section>
     <section>
       <Projects />
+    </section>    
+    <section>
+      <Hero />
     </section>
-    
-    <div className="bg-black h-screen">
-    <h2 className= "text-white text-xs md:text-xl lg:text-2xl xl:text-4xl ">ABOUT</h2>
-    </div>
     {/* <section>
       <div className="h-screen bg-black flex justify-center md:items-center">
         <h1 className="text-white text-7xl">ABOUT ME</h1>

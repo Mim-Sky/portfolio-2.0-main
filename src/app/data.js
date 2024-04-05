@@ -9,23 +9,9 @@ export const PROJECT_DESCRIPTION = [
 
 
 
-  export const PROJECT_DETAILS = [
+  export const ABOUT_ME = [
     {
-        details:
-        'The core UI building block - compose the user interface by combining multiple components.',
-    },
-    {
-        details:
-        'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
-    },
-    {
-      
-        details:
-        'Make components configurable (and therefore reusable) by passing input data to them.',
-    },
-    {
-      
-        details:
-        'React-managed data which, when changed, causes the component to re-render & the UI to update.',
+        aboutme:
+        'Longer text about me. The core UI building block - compose the user interface by combining multiple components.',
     },
   ];

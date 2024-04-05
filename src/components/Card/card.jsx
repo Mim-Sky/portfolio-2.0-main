@@ -14,7 +14,7 @@ const Card = ({ title, image, description, projectDetails }) => {
 
   const animationSettings = {
     initial: { opacity: 0, y: 20 },
-    viewPort: { once: true },
+    viewport: { once: true },
     whileInView: { opacity: 1 },
     transition: { duration: 0.8 },
   };
@@ -23,7 +23,6 @@ const Card = ({ title, image, description, projectDetails }) => {
     initial: {opacity: 1},
     animate: {opacity: 1},
     transition: {duration: 0},
-
   };
 
   return (
