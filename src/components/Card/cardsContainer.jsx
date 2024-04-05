@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './card'; // Adjust the import path as necessary
+import Card from './card';
 import { PROJECT_DESCRIPTION } from '@/app/data';
 
 const CardsContainer = () => {

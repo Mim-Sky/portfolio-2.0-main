@@ -1,6 +1,6 @@
-import CardsContainer from "@/components/cardsContainer";
+import CardsContainer from "@/components/Card/cardsContainer";
 
-const About = () => {
+const Projects = () => {
     return (
         <div className="md:h-screen p-5 flex justify-center bg-wave_blue/30">
             <div className="flex flex-col md:grid md:grid-cols-[auto_1fr] gap-4 items-center container">
@@ -11,4 +11,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Projects;
