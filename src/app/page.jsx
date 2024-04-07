@@ -4,6 +4,8 @@ import usePrefersReducedMotion from "@/hooks/reducedMotion";
 import { motion } from "framer-motion";
 import Projects from "../components/Section/projects";
 import Hero from "../components/Section/hero";
+import Banner from "@/components/Banner/banner";
+import CardsContainer from "@/components/Card/cardsContainer";
 
 
 function Home() {
@@ -24,7 +26,7 @@ function Home() {
   };
   return (
   <>
-    <section className="bg-[url('/bg_island.webp')] bg-cover bg-center h-screen" >
+    <section className="bg-[url('/bg_island.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg h-screen" >
       <div className="flex justify-center h-screen">
         <motion.div
         className="flex flex-col justify-center md:justify-center items-center gap-y-10 "
@@ -35,9 +37,10 @@ function Home() {
       </div>
     </section>
     <section>
-      <Projects />
-    </section>    
-    <section>
+      <Projects CardsComponent={CardsContainer}/>
+    </section>  
+
+    <section className="h-screen" >
       <Hero />
     </section>
     {/* <section>
