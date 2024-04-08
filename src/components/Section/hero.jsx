@@ -12,6 +12,7 @@ const Hero = () => {
     <ContentRightTitle 
       title={'WHO AM I'} 
       contentComponent={<TextComponent text={ABOUT_ME[0].aboutmetext}/>}
+      
 
       
       />
