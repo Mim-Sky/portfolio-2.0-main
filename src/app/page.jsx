@@ -1,11 +1,11 @@
 'use client'
-import Image from "next/image";
+
 import usePrefersReducedMotion from "@/hooks/reducedMotion";
 import { motion } from "framer-motion";
 import Projects from "../components/Section/projects";
 import Hero from "../components/Section/hero";
 import Banner from "@/components/Banner/banner";
-import CardsContainer from "@/components/Card/cardsContainer";
+import Contact from "@/components/Section/contact";
 
 
 function Home() {
@@ -37,29 +37,15 @@ function Home() {
       </div>
     </section>
     <section>
-      <Projects CardsComponent={CardsContainer}/>
+      <Projects />
     </section>  
 
-    <section className="h-screen" >
+    <section >
       <Hero />
     </section>
-    {/* <section>
-      <div className="h-screen bg-black flex justify-center md:items-center">
-        <h1 className="text-white text-7xl">ABOUT ME</h1>
-      </div>
-    </section> */}
-    {/* projects */}
-    {/* <section>
-      <div className="h-screen bg-black flex justify-center md:items-center">
-        <h1 className="text-white text-7xl translate-y-20 md:translate-y-0">PROJECTS</h1>
-      </div>
-    </section> */}
-    {/* contact */}
-    {/* <section>
-      <div className="h-screen bg-black flex justify-center md:items-center">
-        <h1 className="text-white text-7xl translate-y-20 md:translate-y-0">CONTACT</h1>
-      </div>
-    </section> */}
+    <section>
+      <Contact />
+    </section>
   </>
     
   );
