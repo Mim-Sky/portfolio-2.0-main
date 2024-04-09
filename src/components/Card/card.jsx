@@ -31,7 +31,7 @@ const Card = ({ title, image, description, projectDetails }) => {
       className="min-h-96 transition duration-300 ease-in-out transform bg-gray-200 hover:bg-gray-100 p-4 rounded-lg shadow-lg">
       {selected ? (
       <div className='flex flex-col h-full'>
-        <div className="flex justify-between items-center gap-2 w-full">
+        <div className="flex justify-between items-center gap-2">
           <button onClick={clickHandler} className='p-2 rounded text-white bg-slate-600 hover:bg-slate-500 duration-200 ease-in-out'>Back</button>
           <a href="#" className='p-2 rounded text-white bg-slate-600 hover:bg-slate-500 duration-200 ease-in-out text-center'>Visit website</a>
         </div>

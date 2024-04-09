@@ -2,13 +2,15 @@ import { motion } from "framer-motion";
 import ContentLeftTitle from "../Templates/ContentLeftTitle";
 import TextComponent from "../Templates/TextComponent";
 import ContentGrid from "../Templates/ContentGrid";
+import Form from "../Form/form";
+
 
 const Contact = () => {
   return(
     <>
       <ContentGrid 
-      title={'CONTACT'}
-      contentComponent={<TextComponent text={'Contact form'}/>}
+      title={'C'}
+      contentComponent={<Form />}
        />
 
     </>
