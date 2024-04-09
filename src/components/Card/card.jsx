@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import usePrefersReducedMotion from '@/hooks/reducedMotion';
 import Image from "next/image"
-
+import Button from '../Buttons/button.jsx';
 
 
 
@@ -36,8 +36,8 @@ const Card = ({ title, image, description, projectDetails }) => {
       {selected ? (
       <div className='flex flex-col h-full'>
         <div className="flex justify-between items-center gap-2">
-          <button onClick={clickHandler} className='p-2 rounded text-white bg-button_steel_blue hover:bg-slate-500 duration-200 ease-in-out'>Back</button>
-          <a href="#" className='p-2 rounded text-white bg-button_steel_blue hover:bg-slate-500 duration-200 ease-in-out text-center'>Visit website</a>
+        <Button onClick={clickHandler}>Back</Button>
+        <Button href="#">Visit website</Button>
         </div>
         <div className='flex items-center justify-center h-full'>
           <ul className="p-4">
@@ -52,7 +52,8 @@ const Card = ({ title, image, description, projectDetails }) => {
         >
         <div className='flex justify-between items-                                                                                     center w-full'>
           <h2 className="text-xl font-bold text-gray-700 hover:text-black">{title}</h2>
-          <button onClick={clickHandler} className='p-2 rounded text-white/95 font- bg-button_teal hover:bg-button_teal/70 duration-200 ease-in-out'>More details</button>
+          <Button onClick={clickHandler}>More details</Button>
+          
         </div>
           <Image 
           src={image}

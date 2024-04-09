@@ -21,10 +21,8 @@ module.exports = {
         button_steel_blue: '#DAE1E7',
         action_coral: '#C25B56',
         decorative_gold: '#EAE3CB',
-
       },
     },
-    
   },
   plugins: [],
 };
