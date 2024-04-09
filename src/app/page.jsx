@@ -4,7 +4,7 @@ import usePrefersReducedMotion from "@/hooks/reducedMotion";
 import { motion } from "framer-motion";
 import Projects from "../components/Section/projects";
 import Hero from "../components/Section/hero";
-import Banner from "@/components/Banner/banner";
+import Banner from "@/components/Section/banner";
 import Contact from "@/components/Section/contact";
 
 
@@ -44,7 +44,7 @@ function Home() {
       <Hero />
     </section>
     <section>
-      <Contact />
+    <Contact />
     </section>
   </>
     

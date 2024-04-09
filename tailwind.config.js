@@ -14,6 +14,14 @@ module.exports = {
 
       colors: {
         wave_blue: '#14485B',
+        secondary_bg: "#A1B5BE",
+        text_dark: '#2B2B2B',
+        text_light: '#49585D',
+        button_teal: '#4A96AD',
+        button_steel_blue: '#DAE1E7',
+        action_coral: '#C25B56',
+        decorative_gold: '#EAE3CB',
+
       },
     },
     

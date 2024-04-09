@@ -8,7 +8,7 @@ const ContentRightTitle= ({ title, contentComponent }) => {
         {contentComponent}
       </div>
       <div className="flex order-1 lg-order-2 p-5 text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold lg:rotate-[+90deg] tracking-wide">
-      <h1>{title}</h1>
+      <h1 className="text-text_dark">{title}</h1>
       </div>
     </div>
   </section>

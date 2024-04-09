@@ -1,6 +1,6 @@
 import { ABOUT_ME } from "@/app/data";  
 import Image from "next/image";
-import Banner from "../Banner/banner";
+import Banner from "./banner";
 import ContentRightTitle from "../Templates/ContentRightTitle";
 import TextComponent from "../Templates/TextComponent";
 
