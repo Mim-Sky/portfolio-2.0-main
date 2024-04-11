@@ -5,7 +5,6 @@ const Button = ({ href, onClick, children }) => {
       <a
         href={href}
         className="p-2 rounded text-white/95 text-sm md:text-base font-semibold bg-action_coral hover:bg-action_coral/70 duration-200 ease-in-out"
-        target="_blank"
         rel="noopener noreferrer"
       >
         {children}

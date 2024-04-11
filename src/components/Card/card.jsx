@@ -4,7 +4,7 @@ import usePrefersReducedMotion from '@/hooks/reducedMotion';
 import Image from "next/image"
 import Button from '../Buttons/button.jsx';
 
-const Card = ({ title, image, description, projectDetails }) => {
+const Card = ({ title, image, description, pageLink, projectDetails }) => {
   const [selected, setSelected] = useState(false);
   const clickHandler = () => {
     setSelected(!selected);
@@ -29,7 +29,7 @@ const Card = ({ title, image, description, projectDetails }) => {
       <div className='flex flex-col h-full'>
         <div className="flex justify-between items-center gap-2 p-4">
         <Button onClick={clickHandler}>Back</Button>
-        <Button href="#">Visit website</Button>
+        <Button href={pageLink}>Visit website</Button>
         </div>
         <div className='flex items-center justify-center h-full'>
           <ul className="p-4">
