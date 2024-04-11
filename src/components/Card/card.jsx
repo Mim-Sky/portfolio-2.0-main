@@ -58,8 +58,9 @@ const Card = ({ title, image, description, projectDetails }) => {
       alt='project website screenshot'/>
   </div>
   <h2 className="text-xl font-bold text-white text-center mt-6 pb-6">{title}</h2>
-  <hr className="hr-gradient mx-auto w-3/4"/>
-  <div className='p-4 h-1/2 flex flex-col justify-around gap-6'>
+  
+  <div className='p-4 h-1/2 flex flex-col justify-around gap-6 '>
+  
     <p className="text-white text-center">{description}</p>
     <div className='text-center'>
     <Button onClick={clickHandler}>More details</Button>
