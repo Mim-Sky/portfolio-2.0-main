@@ -50,23 +50,22 @@ const Card = ({ title, image, description, projectDetails }) => {
     ) : (
       <div className='flex flex-col items-center gap-3 grayscale-50'
         >
-        <div className='flex justify-between items-                                                                                     center w-full'>
-          <h2 className="text-xl font-bold text-gray-700 hover:text-black">{title}</h2>
+        <div className='flex justify-between items-center w-full'>
+          <h2 className="text-xl font-bold text-white">{title}</h2>
           <Button onClick={clickHandler}>More details</Button>
-          
         </div>
           <Image 
           src={image}
           width={350}
           height={300}
-          objectFit='contain'
-          className='p-2'
+
+          className='rounded-xl p-2 '
           alt='project website screenshot'/>
-          <p className="text-gray-600 hover:text-black">{description}</p>
+          <p className="text-white">{description}</p>
+          
       </div>
       )}
     </motion.div>
-  
   );
 };
 
