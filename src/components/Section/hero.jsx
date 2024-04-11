@@ -1,26 +1,15 @@
 import { ABOUT_ME } from "@/app/data";  
 import Image from "next/image";
-import Banner from "./banner";
 import ContentRightTitle from "../Templates/ContentRightTitle";
 import TextComponent from "../Templates/TextComponent";
 
 const Hero = () => {
-
-  return (
-    
-  <>
+  return ( 
     <ContentRightTitle 
       title={'WHO AM I'} 
       contentComponent={<TextComponent text={ABOUT_ME[0].aboutmetext}/>}
-      
-
-      
       />
-  </>
 );
-}
-
-
-
+};
 
 export default Hero;

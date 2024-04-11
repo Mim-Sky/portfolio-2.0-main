@@ -6,4 +6,5 @@ const TextComponent = ({ text }) => {
     </p>
   );
 };
+
 export default TextComponent;

@@ -7,3 +7,9 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+
+.hr-gradient {
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, #1D4C61, transparent);
+  border: none;
+}
