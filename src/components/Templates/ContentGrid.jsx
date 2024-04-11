@@ -5,7 +5,6 @@ import Linkedin from "../Icons/linkedIn";
 import Github from "../Icons/OcticonMarkGithub24";
 import Facebook from "../Icons/faceBook";
 
-
 const ContentGrid = ({ title, contentComponent }) => {
   return (
     <div className="md:h-screen p-5 flex justify-center bg-wave_blue/30">

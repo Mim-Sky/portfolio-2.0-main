@@ -32,10 +32,10 @@ const Card = ({ title, image, description, projectDetails }) => {
   return (
     <motion.div 
       {...(prefersReducedMotion ? reducedMotionSettings : animationSettings)}
-      className="min-h-96 transition duration-300 ease-in-out transform bg-secondary_bg hover:bg-secondary_bg/70 p-4 rounded-lg shadow-lg">
+      className="min-h-96 transition duration-300 ease-in-out transform bg-secondary_bg hover:bg-secondary_bg/70 rounded-xl shadow-lg">
       {selected ? (
       <div className='flex flex-col h-full'>
-        <div className="flex justify-between items-center gap-2">
+        <div className="flex justify-between items-center gap-2 p-4">
         <Button onClick={clickHandler}>Back</Button>
         <Button href="#">Visit website</Button>
         </div>
@@ -48,22 +48,24 @@ const Card = ({ title, image, description, projectDetails }) => {
         </div>
       </div>  
     ) : (
-      <div className='flex flex-col items-center gap-3 grayscale-50'
-        >
-        <div className='flex justify-between items-center w-full'>
-          <h2 className="text-xl font-bold text-white">{title}</h2>
-          <Button onClick={clickHandler}>More details</Button>
-        </div>
-          <Image 
-          src={image}
-          width={350}
-          height={300}
-
-          className='rounded-xl p-2 '
-          alt='project website screenshot'/>
-          <p className="text-white">{description}</p>
-          
-      </div>
+      <div className='flex flex-col items-center grayscale-50 h-full w-full'>
+  <div className='w-full rounded-t-xl overflow-hidden brightness-90 '>
+    <Image 
+      src={image}
+      width={550} 
+      height={300} 
+      className='w-full objectFir:cover layout:responsive'
+      alt='project website screenshot'/>
+  </div>
+  <h2 className="text-xl font-bold text-white text-center mt-6 pb-6">{title}</h2>
+  <hr className="hr-gradient mx-auto w-3/4"/>
+  <div className='p-4 h-1/2 flex flex-col justify-around gap-6'>
+    <p className="text-white text-center">{description}</p>
+    <div className='text-center'>
+    <Button onClick={clickHandler}>More details</Button>
+    </div>
+  </div>  
+</div>
       )}
     </motion.div>
   );

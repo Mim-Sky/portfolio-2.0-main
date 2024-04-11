@@ -27,9 +27,9 @@ function Home() {
   return (
   <>
     <section className="bg-[url('/bg_island.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg h-screen" >
-      <div className="flex justify-center h-screen">
+      <div className="flex justify-center h-screen ">
         <motion.div
-        className="flex flex-col justify-center md:justify-center items-center gap-y-10 "
+        className="flex flex-col justify-center md:justify-center items-center gap-y-10 brightness-10 "
         {...(prefersReducedMotion ? reducedMotionSettings : animationSettings)}>  
           <h1 className= "text-white text-md md:text-3xl lg:text-5xl xl:text-7xl font-bold ">MICHAL HORODYSKI</h1>
           <h2 className= "text-white text-xs md:text-xl lg:text-2xl xl:text-4xl ">WEB DESIGNER</h2>
@@ -39,12 +39,11 @@ function Home() {
     <section>
       <Projects />
     </section>  
-
-    <section >
+    <section>
       <Hero />
     </section>
     <section>
-    <Contact />
+      <Contact />
     </section>
   </>
     
