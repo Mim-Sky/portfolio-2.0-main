@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         wave_blue: '#14485B',
         secondary_bg: "#A1B5BE",
-        text_dark: '#2B2B2B',
+        text_card: '#23242a',
+        text_dark: '#23242a',
         text_light: '#49585D',
         button_teal: '#1D4C61',
         button_steel_blue: '#DAE1E7',
