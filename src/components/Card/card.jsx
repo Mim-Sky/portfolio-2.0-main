@@ -24,15 +24,16 @@ const Card = ({ title, image, description, pageLink, projectDetails }) => {
   return (
     <motion.div 
       {...(prefersReducedMotion ? reducedMotionSettings : animationSettings)}
-      className="min-h-96 transition duration-300 ease-in-out transform bg-secondary_bg hover:bg-secondary_bg/70 rounded-xl shadow-lg">
+      className="min-h-96 transition duration-300 ease-in-out transform bg-secondary_bg rounded-xl shadow-md hover:shadow-xl hover:scale-105">
       {selected ? (
       <div className='flex flex-col h-full'>
         <div className="flex justify-between items-center gap-2 p-4">
         <Button onClick={clickHandler}>Back</Button>
         <Button href={pageLink}>Visit website</Button>
         </div>
-        <div className='flex items-center justify-center h-full'>
-          <ul className="p-4">
+        <h2 className="text-xl md:text-2xl font-bold text-text_card text-center mt-6 brightness-90">{title}</h2>
+        <div className='flex gap-10 items-center justify-center h-full'>
+          <ul className="flex flex-col gap-6 p-8">
             {projectDetails.map((detail, index) => (
               <li key={index}>{detail}</li>
             ))}
@@ -40,16 +41,16 @@ const Card = ({ title, image, description, pageLink, projectDetails }) => {
         </div>
       </div>  
     ) : (
-  <div className='flex flex-col items-center h-96 md:h-full w-full'>
-    <div className='w-full rounded-t-xl overflow-hidden brightness-90 '>
+  <div className='flex flex-col items-center h-96 md:h-full w-full '>
+    <div className='w-full rounded-t-xl overflow-hidden '>
       <Image 
         src={image}
         width={550} 
         height={300} 
-        className='w-full objectFir:cover layout:responsive'
+        className='w-full objectFit:cover layout:responsive brightness-90'
         alt='project website screenshot'/>
     </div>
-    <h2 className="text-xl md:text-2xl font-bold text-text_card text-center mt-6 ">{title}</h2>
+    <h2 className="text-xl md:text-2xl font-bold text-text_card text-center mt-6 brightness-90">{title}</h2>
     <div className='p-4 h-1/2 flex flex-col justify-around gap-6'>
       <p className="text-text_card text-center text-sm md:text-base">{description}</p>
       <div className='text-center'>
