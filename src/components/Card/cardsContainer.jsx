@@ -6,7 +6,7 @@ const CardsContainer = () => {
   return (
     <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 xl:gap-16">
       {PROJECT_DESCRIPTION.map(card => (
-        <Card key={card.id} title={card.title} image={card.image} description={card.description} projectDetails={card.projectDetails} />
+        <Card key={card.id} title={card.title} image={card.image} description={card.description} pageLink={card.pageLink} projectDetails={card.projectDetails} />
       ))}
     </div>
   );
