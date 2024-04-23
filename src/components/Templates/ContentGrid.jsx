@@ -16,10 +16,26 @@ const ContentGrid = ({ title, contentComponent }) => {
         <div className="h-96 flex flex-col items-center">
           <h2 className="pb-10 md:pb-24 text-text_dark text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-wide">SOCIALS</h2>
           <ul className="flex gap-6">
-            <li><Github /></li>
-            <li><Linkedin /></li>
-            <li><Facebook /></li>
-            <li><Instagram /></li>
+            <li>
+              <a href="https://github.com/Mim-Sky" rel="noopener noreferrer" aria-label="Visit GitHub profile">
+                <Github />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/michal-horodyski-722246273/" rel="noopener noreferrer" aria-label="Visit LinkedIn profile">
+                <Linkedin />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/mimskyy/" rel="noopener noreferrer" aria-label="Visit Facebook profile">
+                <Facebook />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/mimskky/" rel="noopener noreferrer" aria-label="Visit Instagram profile">
+                <Instagram />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
