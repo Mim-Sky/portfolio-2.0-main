@@ -1,5 +1,3 @@
-import TextComponent from "./TextComponent";
-import UilFacebook from "../Icons/faceBook";
 import Instagram from "../Icons/Insta";
 import Linkedin from "../Icons/linkedIn";
 import Github from "../Icons/OcticonMarkGithub24";
