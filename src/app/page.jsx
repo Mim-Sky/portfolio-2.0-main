@@ -36,7 +36,7 @@ function Home() {
           </motion.div>
         </div>
       </section>
-      <section className="snap-center">
+      <section className="snap-start">
         <Projects />
       </section>  
       <section className="snap-center">

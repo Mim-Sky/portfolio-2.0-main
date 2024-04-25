@@ -41,7 +41,7 @@ const Card = ({ title, image, description, pageLink, projectDetails }) => {
         </div>
       </div>  
     ) : (
-  <div className='flex flex-col items-center h-96 md:h-full w-full'>
+  <div className='flex flex-col items-center h-full w-full'>
     <div className='w-full rounded-t-xl overflow-hidden'>
       <Image 
         src={image}
