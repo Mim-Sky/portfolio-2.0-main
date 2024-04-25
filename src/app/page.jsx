@@ -24,9 +24,9 @@ function Home() {
     transition: { duration: 0 }
   };
   return (
-    <div className="overflow-scroll h-screen md:snap-y snap-mandatory">
-      <section className="snap-start bg-[url('/bg_island_optimized.webp')] bg-cover bg-fixed bg-center bg-no-repeat h-screen" >
-        <div className="flex justify-center h-screen">
+    <div className="h-screen overflow-scroll md:snap-y snap-mandatory">
+      <section className="h-screen snap-start bg-[url('/bg_island_optimized.webp')] bg-cover bg-fixed bg-center bg-no-repeat" >
+        <div className="flex justify-center h-screen ">
           <motion.div
             className="flex flex-col justify-center md:justify-center items-center gap-y-10 brightness-10"
             {...(prefersReducedMotion ? reducedMotionSettings : animationSettings)}>

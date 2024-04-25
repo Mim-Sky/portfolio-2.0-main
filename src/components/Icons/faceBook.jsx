@@ -4,8 +4,8 @@ export default function Facebook(props) {
 	return (
 	<svg 
 		xmlns="http://www.w3.org/2000/svg" 
-		width="3rem" 
-		height="3rem" 
+		width="2rem" 
+		height="2rem" 
 		viewBox="0 0 24 24" {...props}
 		className='text-button_teal hover:text-button_teal/70 duration-200 ease-in-out'>
 		<path 
