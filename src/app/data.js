@@ -33,7 +33,7 @@ export const PROJECT_DESCRIPTION = [
       id: 4, 
       title: 'My Portfolio v 2.0', 
       image: '/portfolio_second.webp', 
-      description: 'Second portfolio that you actually look at. The goal was to create clean and simple design mixed with a powerful backend and fronend frameworks', 
+      description: 'The goal was to create clean and simple design mixed with a powerful backend and fronend frameworks', 
       projectDetails: ["Technology: NextJS, React", "CSS: Tailwind", "Dependencies: FramerMotion, Formspree", "High accessibility score (Wave Evaluation tool)"] },
     ];
 

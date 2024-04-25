@@ -3,7 +3,7 @@ const ContentRightTitle= ({ title, contentComponent }) => {
 
   return (
   <section className="h-screen p-5 flex justify-center bg-wave_blue/30 overflow-scroll">
-    <div className="mt-8 flex flex-col md:flex lg:grid lg:grid-cols-[1fr_auto] gap-4 items-center container">
+    <div className="flex flex-col md:flex lg:grid lg:grid-cols-[1fr_auto] gap-4 items-center container">
       <div className='order-2 lg:order-1'>
         {contentComponent}
       </div>
