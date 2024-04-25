@@ -25,28 +25,27 @@ function Home() {
     transition: { duration: 0 }
   };
   return (
-  <>
-    <section className="bg-[url('/bg_island.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat shadow-lg h-screen" >
-      <div className="flex justify-center h-screen ">
-        <motion.div
-        className="flex flex-col justify-center md:justify-center items-center gap-y-10 brightness-10 "
-        {...(prefersReducedMotion ? reducedMotionSettings : animationSettings)}>  
-          <h1 className= "text-white text-md md:text-3xl lg:text-5xl xl:text-7xl font-bold ">MICHAL HORODYSKI</h1>
-          <h2 className= "text-white text-xs md:text-xl lg:text-2xl xl:text-4xl ">WEB DESIGNER</h2>
-        </motion.div>
-      </div>
-    </section>
-    <section>
-      <Projects />
-    </section>  
-    <section>
-      <Hero />
-    </section>
-    <section>
-      <Contact />
-    </section>
-  </>
-    
+    <div className="snap-y overflow-scroll h-screen snap-mandatory">
+      <section className="snap-start bg-[url('/bg_island.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat h-screen" >
+        <div className="flex justify-center h-screen">
+          <motion.div
+            className="flex flex-col justify-center md:justify-center items-center gap-y-10 brightness-10"
+            {...(prefersReducedMotion ? reducedMotionSettings : animationSettings)}>
+            <h1 className="text-white text-xl md:text-3xl lg:text-5xl xl:text-7xl font-bold">MICHAL HORODYSKI</h1>
+            <h2 className="text-white text-md md:text-xl lg:text-2xl xl:text-4xl">WEB DESIGNER</h2>
+          </motion.div>
+        </div>
+      </section>
+      <section className="snap-start">
+        <Projects />
+      </section>  
+      <section className="snap-center">
+        <Hero />
+      </section>
+      <section className="snap-center">
+        <Contact />
+      </section>
+    </div>
   );
 }
 

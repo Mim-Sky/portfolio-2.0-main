@@ -24,7 +24,7 @@ const Card = ({ title, image, description, pageLink, projectDetails }) => {
   return (
     <motion.div 
       {...(prefersReducedMotion ? reducedMotionSettings : animationSettings)}
-      className="min-h-96 transition duration-300 ease-in-out transform bg-secondary_bg rounded-xl shadow-md hover:shadow-xl hover:scale-105">
+      className="h-104 transition duration-300 ease-in-out transform bg-secondary_bg rounded-xl shadow-md hover:shadow-xl hover:scale-105">
       {selected ? (
       <div className='flex flex-col h-full'>
         <div className="flex justify-between items-center gap-2 p-4">
@@ -41,8 +41,8 @@ const Card = ({ title, image, description, pageLink, projectDetails }) => {
         </div>
       </div>  
     ) : (
-  <div className='flex flex-col items-center h-96 md:h-full w-full '>
-    <div className='w-full rounded-t-xl overflow-hidden '>
+  <div className='flex flex-col items-center h-full w-full'>
+    <div className='w-full rounded-t-xl overflow-hidden'>
       <Image 
         src={image}
         width={550} 
