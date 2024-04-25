@@ -24,8 +24,8 @@ function Home() {
     transition: { duration: 0 }
   };
   return (
-    <div className="snap-y overflow-scroll h-screen snap-mandatory">
-      <section className="snap-start bg-[url('/bg_island_optimized.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat h-screen" >
+    <div className="overflow-scroll h-screen md:snap-y snap-mandatory">
+      <section className="snap-start bg-[url('/bg_island_optimized.webp')] bg-cover bg-fixed bg-center bg-no-repeat h-screen" >
         <div className="flex justify-center h-screen">
           <motion.div
             className="flex flex-col justify-center md:justify-center items-center gap-y-10 brightness-10"
@@ -35,13 +35,13 @@ function Home() {
           </motion.div>
         </div>
       </section>
-      <section className="snap-start">
+      <section className="snap-center">
         <Projects />
       </section>  
-      <section className="snap-start">
+      <section className="snap-center">
         <Hero />
       </section>
-      <section className="snap-start">
+      <section className="snap-center">
         <Contact />
       </section>
     </div>
