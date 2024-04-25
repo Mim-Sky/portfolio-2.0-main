@@ -24,7 +24,7 @@ function Home() {
     transition: { duration: 0 }
   };
   return (
-    <div className="snap-y overflow-scroll h-screen snap-mandatory">
+    <div className="snap-y overflow-scroll snap-mandatory">
       <section className="snap-start bg-[url('/bg_island_optimized.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat h-screen" >
         <div className="flex justify-center h-screen">
           <motion.div
