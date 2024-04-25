@@ -12,6 +12,10 @@ module.exports = {
         "parallax": 'url("/public/bg_island.webp")'
       },
 
+      height: {
+        '104': '30rem',
+      },
+
       colors: {
         wave_blue: '#14485B',
         secondary_bg: "#A1B5BE",
