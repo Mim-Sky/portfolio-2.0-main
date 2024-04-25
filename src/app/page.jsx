@@ -4,7 +4,6 @@ import usePrefersReducedMotion from "@/hooks/reducedMotion";
 import { motion } from "framer-motion";
 import Projects from "../components/Section/projects";
 import Hero from "../components/Section/hero";
-import Banner from "@/components/Section/banner";
 import Contact from "@/components/Section/contact";
 
 
@@ -26,7 +25,7 @@ function Home() {
   };
   return (
     <div className="snap-y overflow-scroll h-screen snap-mandatory">
-      <section className="snap-start bg-[url('/bg_island.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat h-screen" >
+      <section className="snap-start bg-[url('/bg_island_optimized.webp')] overflow-y-scroll bg-cover bg-fixed bg-center bg-no-repeat h-screen" >
         <div className="flex justify-center h-screen">
           <motion.div
             className="flex flex-col justify-center md:justify-center items-center gap-y-10 brightness-10"
@@ -39,10 +38,10 @@ function Home() {
       <section className="snap-start">
         <Projects />
       </section>  
-      <section className="snap-center">
+      <section className="snap-start">
         <Hero />
       </section>
-      <section className="snap-center">
+      <section className="snap-start">
         <Contact />
       </section>
     </div>
